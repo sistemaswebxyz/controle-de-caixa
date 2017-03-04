@@ -1,2 +1,2 @@
 # controle-de-caixa
-Controle de Caixa
+Sistema de Gerenciamento Caixa
