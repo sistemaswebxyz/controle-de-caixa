@@ -1,15 +1,14 @@
 <?php
 include '../config/db.php';
+include '../fornecedor/functions.fornecedor.php';
 // declaração de variáveis;
 $codigo = $_POST['codigo'];
 $nome = $_POST['nome'];
 $descricao = $_POST['desc'];
 $quantidade = $_POST['qtProd'];
 $preco = $_POST['precoUn'];
+$fk_cnpj = getIdFornecedor($_POST['cnpj']);
 
-if (isset($_POST['cnpj'])) {
-    $fornecedor_id =  1 ;
-}
 
 $con = conDB();
 
@@ -21,7 +20,7 @@ $stmt->bindParam(2, $nome);
 $stmt->bindParam(3, $descricao);
 $stmt->bindParam(4, $quantidade);
 $stmt->bindParam(5, $preco);
-$stmt->bindParam(6, $fornecedor_id);
+$stmt->bindParam(6, $fk_cnpj);
 $stmt->bindParam(7, $codigo);
 $resp = $stmt->execute();
 

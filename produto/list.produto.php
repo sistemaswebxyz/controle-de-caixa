@@ -1,7 +1,7 @@
 <?php
 include '../config/db.php';
 $con = conDB();
-$sql = "SELECT * FROM tb_produto ORDER BY id DESC";
+$sql = "SELECT p.*,f.nfantasia,f.cnpj  FROM tb_produto AS p INNER JOIN tb_fornecedor AS f ON p.fk_fornecedor_id = f.id ORDER BY p.dateIns DESC";
 $query = $con->query($sql);
 /*
   Uso mais esses -> FETCH_OBJ -> Retorna os dados em formato de objeto
@@ -23,6 +23,8 @@ $query = $con->query($sql);
       <th>Descrição</th>
       <th>Quantidade</th>
       <th>Preço</th>
+      <th>Fornecedor</th>
+      <th>CNPJ</th>
       <th>Opções</th>
     </tr>
   </thead>
@@ -37,6 +39,8 @@ $query = $con->query($sql);
         <td><?=$data->descricao?></td>
         <td><?=$data->quantidade?></td>
         <td><?=$data->preco?></td>
+        <td><?=$data->nfantasia?></td>
+        <td><?=$data->cnpj?></td>
         <td>
           <a href="form.produto.edit.php?cod=<?=$data->codProduto?>">Editar</a>
           <a href="delete.produto.php?cod=<?=$data->codProduto?>">Deletar</a>
