@@ -1,7 +1,11 @@
 <?php
   include '../config/db.php';
   $con = conDB();
-  $sql = "SELECT * FROM tb_produto WHERE codProduto = ". $_GET['cod'];
+
+
+  $sql = "SELECT p.*,f.cnpj FROM tb_produto AS p INNER JOIN tb_fornecedor AS f ON p.fk_fornecedor_id = f.id WHERE codProduto = ". $_GET['cod'];
+
+
   $query = $con->query($sql);
   $dados = $query->fetch(PDO::FETCH_OBJ);
 ?>
@@ -46,7 +50,7 @@
 
       <div class="">
         <label for="cnpj">CNPJ Fornecedor</label>
-        <input type="text" name="cnpj" id="cnpj" /> <a href="#">Não fornecer</a>
+        <input type="text" name="cnpj" id="cnpj" value="<?=$dados->cnpj?>" /> <a href="#">Não fornecer</a>
       </div>
 
       <div class="">
