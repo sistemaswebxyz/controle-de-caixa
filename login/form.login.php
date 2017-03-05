@@ -1,5 +1,5 @@
 <div class="">
-  <form class="" onsubmit="return doLogin();">
+  <form method="post" action="login/login.autentica.php">
     <div class="">
       <label for="user">Usuário</label>
       <input type="text" name="user" id="user" />
@@ -16,10 +16,8 @@
       </div>
 
       <div class="">
-        Esqueceu sua senha
+        <a href="#/">Esqueceu sua senha</a>
       </div>
-
     </div>
-
 </form>
 </div>
