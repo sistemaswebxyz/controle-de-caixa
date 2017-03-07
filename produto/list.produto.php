@@ -42,6 +42,7 @@ $query = $con->query($sql);
         <td><?=$data->nfantasia?></td>
         <td><?=$data->cnpj?></td>
         <td>
+          <a href="../codigo-de-barras/form.codebar.ins.php?code=<?=$data->codProduto?>">barCode</a>
           <a href="form.produto.edit.php?cod=<?=$data->codProduto?>">Editar</a>
           <a href="delete.produto.php?cod=<?=$data->codProduto?>">Deletar</a>
         </td>
