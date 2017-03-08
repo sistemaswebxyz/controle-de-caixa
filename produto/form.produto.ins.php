@@ -2,29 +2,27 @@
 <html lang="pt-br">
   <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-
-    <!-- <meta charset="utf-8"> -->
     <title></title>
-    <style>
-    form{
-      display: inline;
-    }
-    </style>
+
   </head>
 
   <body>
-    <form method="post" action="ins.produto.php">
-
-      <label for="codigo">Código</label>
-      <input type="text" name="codigo" id="codigo" />
+    <fieldset>
+      <legend>Cadastro de Produtos</legend>
+      <form method="post" action="ins.produto.php">
 
       <div class="">
-        <label for="nome">Nome do produto</label>
+        <label for="codigo">Código de barras</label>
+        <input type="text" name="codigo" id="codigo" />
+      </div>
+
+      <div class="">
+        <label for="nome">Nome:</label>
         <input type="text" name="nome" id="nome" />
       </div>
 
       <div class="">
-        <label for="desc">Descrição do produto</label>
+        <label for="desc">Descrição:</label>
         <input type="text" name="desc" id="desc" />
       </div>
 
@@ -47,5 +45,6 @@
         <button type="submit" name="button">Gravar</button>
       </div>
     </form>
+    </fieldset>
   </body>
 </html>
