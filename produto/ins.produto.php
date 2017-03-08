@@ -25,10 +25,8 @@ $stmt->bindParam(6, $preco);
 $stmt->bindParam(7, $fk_cnpj);
 $resp = $stmt->execute();
 
-//Retorna true ou false
 if (!$resp) {
-    //Retorna erro caso falhe
-    print_r($stmt->errorInfo());
+    print_r($stmt->errorCode());
 } else {
     echo "<a href='list.produto.php'>Voltar aos produtos</a><br/>";
     echo "Gravado com sucesso!";
