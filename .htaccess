@@ -1,0 +1,6 @@
+RewriteEngine ON
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^/?$ /index.php [NC,L]
+RewriteRule ^(.*)/(.*){0,20}?$ index.php?page=$1&method=$2
+#Options -Indexes
