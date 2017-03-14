@@ -1,5 +1,7 @@
 <?php
 
+
+
 function router($arr)
 {
     $arr['page'] = $arr['page'] ?? '/';
