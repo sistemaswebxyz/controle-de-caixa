@@ -10,10 +10,10 @@ alter table tb_produto add column fk_fornecedor_id int not null;
 <p>
 
 <h3> 2º) Passo </h3>
-<p>
--- Relacionando a coluna de Produtos id a id de Fornecedores
-alter table tb_produto add constraint fk_ProdForn foreign key(fk_fornecedor_id) references tb_fornecedor(id);
-</p>
+<p>Relacionando a coluna de Produtos id a id de Fornecedores</p>
+<code>
+  ALTER TABLE tb_produto ADD CONSTRAINT fk_ProdForn FOREIG KEY(fk_fornecedor_id) REFERENCES tb_fornecedor(id);
+</code>
 
 <h3> 3º) Passo </h3>
 <p>
