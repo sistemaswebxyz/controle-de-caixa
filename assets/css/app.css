@@ -1,0 +1,130 @@
+
+body{
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+.desenvolvido{
+  font-weight: bold;
+}
+
+/*Alerts*/
+.alert-danger {
+  font-size: 14pt;
+  color: #a94442;
+
+  background-color: #f2dede;
+  border:1px solid #ebccd1;
+
+  height: 45px;
+
+  display: flex;
+  -webkit-display:flex;
+
+  justify-content: center;
+  -webkit-justify-content:center;
+
+  align-items: center;
+  -webkit-align-items:center;
+
+}
+
+/*Área de Login*/
+.container-login{;
+  margin-top: 7%;
+}
+.logo-login{
+  color: #999;
+}
+.login{
+  background-color: #fff;
+  padding: 3%;
+  width: 450px;
+  border: 1px solid #ccc;
+}
+/*--------------*/
+
+/* Sidebar - tela principal*/
+.aside{
+  background-color: #223141;
+  height: 100vh !important;
+}
+.aside ul li.logo{
+  height: 55px !important;
+  border-bottom: none;
+  margin: 50px 0 100px 0;
+
+}
+
+.aside ul li{
+  display: flex;
+  -webkit-display:flex;
+
+  flex-flow: row nowrap;
+  -webkit-flex-flow: row nowrap;
+
+  align-items: center;
+  -webkit-align-items: center;
+
+  border-bottom: 1px solid #354c64;
+  height: 40px;
+}
+.aside ul li:hover{
+  transition: 0.3s;
+  background-color: #ccc;
+  color: #404040;
+}
+.aside ul a{
+  color: #ccc;
+  line-height: 22pt;
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+.aside ul a span{
+  margin-left: 15px;
+}
+/*--------------------------*/
+
+/*Main - tela prnicipal*/
+.main{
+  margin: 0;
+  padding: 0;
+}
+
+/*Modules*/
+.modules{
+  margin: 0 !important;
+  padding:0 !important;
+}
+.modules nav{
+  background-color: #f5f5f5 !important;
+}
+.modules nav a, .modules nav a.breadcrumb, .modules nav a.breadcrumb::before {
+  color: #404040 !important;
+}
+.modules .user-active a {
+  color: #999 !important;
+  font-size: 11pt !important;
+  font-weight: bold;
+}
+.modules .user-active i {
+  font-size: 18pt !important;
+  font-weight: bold;
+}
+
+.dropdown-content{
+  width: 200px !important;
+  margin-top: 50px;
+}
+/*----------------*/
+
+/*Modulos gerais*/
+.container-module{
+  margin-left: 10px;
+}
+
+/*Tabela*/
+table tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
