@@ -20,7 +20,7 @@
 
           //Senha expirada
           if ($dadosDB->expirada == 2) {
-              echo 'resetSenha.php';
+              echo 'login/resetSenha.php';
           } else {
               echo 'main.php';
           }
