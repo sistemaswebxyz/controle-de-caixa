@@ -17,7 +17,7 @@
       if (password_verify($dados->passwd, $dadosDB->senha)) {
           $_SESSION['us_name'] = $dadosDB->nome;
           $_SESSION['us_id'] = $dadosDB->id;
-
+          $_SESSION['us_exp'] = $dadosDB->expirada;
           //Senha expirada
           if ($dadosDB->expirada == 2) {
               echo 'login/resetSenha.php';
