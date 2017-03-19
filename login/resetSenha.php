@@ -1,6 +1,6 @@
 <?php
 session_start();
-  if (!isset($_SESSION['us_id']) || $_SESSION['us_exp'] !== 2) {
+  if (!isset($_SESSION['us_id']) || $_SESSION['us_exp'] != 2) {
       header('HTTP/1.1 302 Redirect');
       header("Location: ../index.php");
   }
