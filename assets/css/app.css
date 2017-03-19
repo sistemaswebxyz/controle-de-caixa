@@ -1,6 +1,6 @@
 
 body{
-  background-color: #f2f2f2;
+  background-color: #eef2f6;
   margin: 0;
   padding: 0;
 }
@@ -8,15 +8,15 @@ body{
   font-weight: bold;
 }
 
-/*Alerts*/
+/*========= Alerts ============*/
 .alert-danger {
-  font-size: 14pt;
+  font-size: 13pt;
   color: #a94442;
 
   background-color: #f2dede;
   border:1px solid #ebccd1;
 
-  height: 45px;
+  height: 40px;
 
   display: flex;
   -webkit-display:flex;
@@ -28,21 +28,53 @@ body{
   -webkit-align-items:center;
 
 }
+/*=============================*/
 
 /*Área de Login*/
 .container-login{;
-  margin-top: 7%;
+  margin-top: 5%;
 }
-.logo-login{
+.logo-login img{
   color: #999;
+  /*max-width: 400px;*/
+  height: 70px;
 }
+
 .login{
   background-color: #fff;
-  padding: 3%;
-  width: 450px;
+  padding: 2%;
+  width: 400px;
   border: 1px solid #ccc;
 }
-/*--------------*/
+.container-login input[type="text"],
+.container-login input[type="password"] {
+  color:#404040;
+  font-size: 14pt !important;
+}
+/* Underline focus color */
+  .container-login .input-field input[type="text"]:focus,
+  .container-login .input-field input[type="password"]:focus {
+    border-bottom: 1px solid #587ea7;
+    box-shadow: 0 1px 0 0 #587ea7;
+  }
+
+.container-login input{
+  color:#404040;
+  font-size: 14pt !important;
+}
+.container-login .input-field label{
+  font-weight: bold;
+  color:  #4f7296;
+  font-size: 9pt;
+}
+.container-login button{
+  background-color: #587ea7 !important;
+}
+.container-login button:hover{
+  background-color: #7998b9 !important;
+}
+
+/*-----------------------------------------*/
 
 /* Sidebar - tela principal*/
 .aside{
