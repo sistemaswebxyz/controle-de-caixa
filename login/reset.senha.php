@@ -7,7 +7,7 @@ $n_senha = $data->n_senha;
 $c_senha = $data->c_senha;
 
 
-if ($n_senha !== $c_senha || $_SESSION['us_exp'] !== 2) {
+if ($n_senha !== $c_senha || $_SESSION['us_exp'] != 2) {
     http_response_code(505);
 }
 $n_senha = password_hash($n_senha, PASSWORD_DEFAULT);
