@@ -12,6 +12,7 @@ session_start();
     <title>.: i9 Soluções :.</title>
     <link rel="stylesheet" href="assets/materialize/css/materialize.min.css" />
     <link rel="stylesheet" href="assets/css/app.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
     <link rel="icon" type="image/png" href="favicon.ico" />
     <link rel="shortcut icon" href="favicon.ico" />
   </head>
@@ -38,16 +39,19 @@ session_start();
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col s12">
                     <button type="submit" class="btn blue" >Entrar</button>
                 </div>
             </div>
           </form>
             </div>
-            <span class="grey-text">
-              Desenvolvido por
+            <div class="row">
+              <span class="grey-text">
+                Desenvolvido por
                 <a href="#" class="grey-text darken-1 desenvolvido">i9 soluções</a>
-            </span>
+              </span>
+
+            </div>
         </div>
   </body>
   <script type="text/javascript" src="js/ajax.js"></script>

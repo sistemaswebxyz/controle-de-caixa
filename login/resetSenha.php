@@ -13,12 +13,18 @@ session_start();
     <title></title>
     <link rel="stylesheet" href="../assets/materialize/css/materialize.min.css">
     <link rel="stylesheet" href="../assets/css/app.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <script type="text/javascript" src="../js/reset.js"></script>
   </head>
   <body>
       <div class="center container-login">
+        <div class="row header-reset-senha">
+          <div class="col s12 ">
+            <h5 class="h5-reset">ATUALIZAR SENHA</h5>
+            <div class="divider"></div>
+          </div>
+        </div>
         <div class="row login z-depth-1">
-          <h5 style="color:#404040; ">RECUPERAR SENHA</h5>
           <div class="row">
             <div class="col s12 m12 l12" id="alert"></div>
           </div>
@@ -35,14 +41,16 @@ session_start();
                 </div>
             </div>
               <div class="row">
-                <div class="col">
-                    <button onclick="reset.doReset(event)"  class="btn blue" >SALVAR</button>
+                <div class="col s12">
+                    <button onclick="reset.doReset(event)"  class="btn blue" >ATUALIZAR</button>
                 </div>
             </div>
           </div>
             <span class="grey-text">
-              Desenvolvido por
-                <a href="#" class="grey-text darken-1 desenvolvido">xxxxxxxx</a>
+              <div class="row">
+                Desenvolvido por
+                <a href="#" class="grey-text darken-1 desenvolvido">i9 Soluções</a>
+              </div>
             </span>
         </div>
   </body>
