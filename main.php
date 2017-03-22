@@ -16,49 +16,48 @@
   </head>
   <body>
     <main>
-
-
       <div class="row main">
 
-        <div class="col m2 l2 aside z-depth-1">
+        <div class="col m1 l1 aside z-depth-1 hide-on-small-only">
+
           <ul>
-            <a href="#">
-              <li class="logo">
-                <img src="https://evwilkin.github.io/images/materializecss.png" class="responsive-img" />
-              </li>
+
+            <a href="#" >
+              <li><i class="material-icons">menu</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">dashboard</i><span>Dashboard</span></li>
+            <a href="#" title="Visão Geral" class="tooltipped" data-delay="50" data-tooltip="Visão Geral" data-position="right">
+              <li><i class="material-icons">dashboard</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">attach_money</i><span>Vendas</span></li>
+            <a href="#" class="tooltipped" data-delay="50" data-tooltip="Vendas" data-position="right">
+              <li><i class="material-icons">attach_money</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">person</i><span>Clientes</span></li>
+            <a href="#" title="Clientes" class="tooltipped" data-delay="50" data-tooltip="Clientes" data-position="right">
+              <li><i class="material-icons">person</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">local_shipping</i> <span>Fornecedores </span></li>
+            <a href="#" class="tooltipped" data-delay="50" data-tooltip="Fornecedores" data-position="right">
+              <li><i class="material-icons">local_shipping</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">poll</i><span>Relatórios</span></li>
+            <a href="#" class="tooltipped" data-delay="50" data-tooltip="Visão Geral" data-position="right">
+              <li><i class="material-icons">poll</i></li>
             </a>
 
-            <a href="#">
-              <li><i class="material-icons">search</i><span>Consultas</span></li>
+            <a href="#" title="Pesquisar" class="tooltipped" data-delay="50" data-tooltip="Realizar busca" data-position="right">
+              <li><i class="material-icons">search</i></li>
             </a>
 
-            <a href="#">
-              <li class="last"><i class="material-icons">bug_report</i><span>Produtos</span></li>
+            <a href="#" class="tooltipped" data-delay="50" data-tooltip="Reportar problemas" data-position="right">
+              <li class="last"><i class="material-icons">bug_report</i></li>
             </a>
           </ul>
+
         </div>
 
-        <div class="col m10 l10 modules">
+        <div class="col s12 m11 l11 modules">
           <nav>
             <div class="nav-wrapper">
               <div class="col s9 m9 l9">
@@ -98,6 +97,7 @@
   <script type="text/javascript">
   $(document).ready(function(){
     $(".dropdown-button").dropdown();
+    $('.tooltipped').tooltip({delay: 50});
   });
   </script>
 </html>

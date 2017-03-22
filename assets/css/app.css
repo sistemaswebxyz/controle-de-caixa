@@ -7,7 +7,6 @@ body{
 .desenvolvido{
   font-weight: bold;
 }
-
 /*========= Alerts ============*/
 .alert-danger {
   font-size: 13pt;
@@ -26,7 +25,6 @@ body{
 
   align-items: center;
   -webkit-align-items:center;
-
 }
 /*=============================*/
 
@@ -80,42 +78,37 @@ body{
 .aside{
   background-color: #223141;
   height: 100vh !important;
+  max-width:5% !important;
 }
-.aside ul li.logo{
-  height: 55px !important;
-  border-bottom: none;
-  margin: 50px 0 100px 0;
-
-}
-
-.aside ul li{
+.aside a li{
   display: flex;
   -webkit-display:flex;
 
-  flex-flow: row nowrap;
-  -webkit-flex-flow: row nowrap;
+  flex-flow: column nowrap;
+  -webkit-flex-flow: column nowrap;
 
   align-items: center;
   -webkit-align-items: center;
+  height: 50px;
 
-  border-bottom: 1px solid #354c64;
-  height: 40px;
+  justify-content: center;
+  -webkit-justify-content: center;
+
 }
 .aside ul li:hover{
-  transition: 0.3s;
-  background-color: #ccc;
-  color: #404040;
+  transition: 0.1s;
+  color: #999;
 }
+
 .aside ul a{
   color: #ccc;
   line-height: 22pt;
-  font-size: 12pt;
-  font-weight: 500;
+  /*font-size: 15pt;*/
+}
+.aside  i{
+  font-size: 27pt !important;
 }
 
-.aside ul a span{
-  margin-left: 15px;
-}
 /*--------------------------*/
 
 /*Main - tela prnicipal*/
@@ -128,6 +121,7 @@ body{
 .modules{
   margin: 0 !important;
   padding:0 !important;
+  min-width: 95% !important;
 }
 .modules nav{
   background-color: #f5f5f5 !important;
@@ -141,6 +135,10 @@ body{
   font-weight: bold;
 }
 .modules .user-active i {
+  font-size: 20pt !important;
+  font-weight: bold;
+}
+.menu-icon{
   font-size: 18pt !important;
   font-weight: bold;
 }
