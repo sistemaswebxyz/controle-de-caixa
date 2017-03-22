@@ -58,7 +58,7 @@
         </div>
 
         <div class="col s12 m11 l11 modules">
-          <nav>
+          <nav style="height:10vh">
             <div class="nav-wrapper">
               <div class="col s9 m9 l9">
                 <a href="#!" class="breadcrumb">Dasboard</a>
@@ -85,7 +85,7 @@
           </div>
         </nav>
 
-          <?php include_once 'usuario/list.usuario.php'; ?>
+          <iframe src="usuario/list.usuario.php" style="width:100%;min-height:89vh;border:none"></iframe>
 
         </div>
 
