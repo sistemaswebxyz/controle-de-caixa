@@ -85,7 +85,7 @@
           </div>
         </nav>
 
-          <iframe src="usuario/list.usuario.php" style="width:100%;min-height:89vh;border:none"></iframe>
+          <iframe src="modulos/box.modulos.php?page=main" style="width:100%;min-height:88vh;border:none; margin-top:0.5%;"></iframe>
 
         </div>
 
