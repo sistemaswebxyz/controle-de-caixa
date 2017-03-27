@@ -1,7 +1,7 @@
 <style media="screen">
 
   .l2{
-    width: 18% !important;
+    width: 19.01% !important;
   }
   .modulos{
 
@@ -58,15 +58,26 @@
     color: #999;
     font-size: 7em;
   }
+  #grafico{
+     height: 250px;
+     border-radius: 5px;
+  }
+  .highcharts-background{
+  }
 </style>
-<div class="container" style="padding:3%;">
-  <div class="section">
-    <h5>Acesso Rápido</h5>
+
+<div class="container">
+
+  <div class="section grey-text">
+    <h4>DASBOARD</h4>
     <div class="divider"></div>
   </div>
 
+  <div id="grafico" style="padding:3px;" class="row valign-wrapper z-depth-1"></div>
+
   <div class="center">
-    <div class="row valign-wrapper">
+    <div class="row">
+
     <div class="modulos col s12 m2 l2 z-depth-1">
       <div class="icons">
           <i class="material-icons">shopping_cart</i>
@@ -115,3 +126,7 @@
   </div>
   </div>
 </div>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script type="text/javascript" src="../../js/grafico.js"></script>
