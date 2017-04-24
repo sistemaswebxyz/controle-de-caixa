@@ -62,7 +62,7 @@
             <div class="nav-wrapper">
               <div class="col s9 m9 l9">
                 <a href="#!" class="breadcrumb">Dasboard</a>
-                <a href="#!" class="breadcrumb">Usuário</a>
+                <!-- <a href="#!" class="breadcrumb">Usuário</a> -->
               </div>
 
               <div class="col s3 m3 l3 right">
