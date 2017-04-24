@@ -1,4 +1,4 @@
-var dados = resource.get('/modulos/vendas/getVendas.php',null,function(response){
+var dados = resource.get('vendas/getVendas.php',null,function(response){
   var res = JSON.parse(response.data);
   $(function () {
     var myChart = Highcharts.chart('grafico', {
@@ -6,7 +6,7 @@ var dados = resource.get('/modulos/vendas/getVendas.php',null,function(response)
         zoomType: 'xy'
       },
       title: {
-        text: 'Gráfico de Vendas'
+        text: 'Faturamento da empresa'
       },
       xAxis: {
         categories: ['JAN', 'FEV', 'MAR', 'ABR', 'MAI', 'JUN', 'JUL', 'AGO', 'SET', 'OUT', 'NOV', 'DEZ']
